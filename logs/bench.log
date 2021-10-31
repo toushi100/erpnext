@@ -122,3 +122,8 @@
 2021-10-31 15:46:31,113 INFO /usr/local/bin/bench serve --port 8000
 2021-10-31 15:46:31,118 INFO /usr/local/bin/bench worker --queue default
 2021-10-31 15:46:31,141 INFO /usr/local/bin/bench schedule
+2021-10-31 17:26:46,985 INFO /usr/local/bin/bench start
+2021-10-31 17:28:10,355 INFO /usr/local/bin/bench start
+2021-10-31 17:28:34,288 INFO /usr/local/bin/bench start
+2021-10-31 17:28:51,574 INFO /usr/local/bin/bench start
+2021-10-31 18:00:01,667 INFO /usr/local/bin/bench --verbose --site all backup

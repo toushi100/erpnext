@@ -4,3 +4,9 @@ Backup Summary for dcode.com at 2021-10-30 15:30:05.844102
 Config  : ./dcode.com/private/backups/20211030_153002-dcode_com-site_config_backup.json 158.0B
 Database: ./dcode.com/private/backups/20211030_153002-dcode_com-database.sql.gz         1.2MiB
 Backup for Site dcode.com has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _4859f2df50354e92 -pzpUNNfTn9nfI2be7 _4859f2df50354e92 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./dcode.com/private/backups/20211031_170001-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2021-10-31 17:00:04.136408
+Config  : ./dcode.com/private/backups/20211031_170001-dcode_com-site_config_backup.json 158.0B
+Database: ./dcode.com/private/backups/20211031_170001-dcode_com-database.sql.gz         1.4MiB
+Backup for Site dcode.com has been successfully completed
