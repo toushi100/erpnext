@@ -1,0 +1,124 @@
+2021-10-28 13:53:00,565 DEBUG cd frappe-bench && /usr/local/bin/virtualenv -q env -p python3
+2021-10-28 13:53:01,395 LOG Getting app frappe
+2021-10-28 13:53:01,395 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2021-10-28 13:53:09,144 LOG installing frappe
+2021-10-28 13:53:09,144 DEBUG frappe-bench/env/bin/python -m pip install -q -U -e frappe-bench/apps/frappe 
+2021-10-28 13:53:47,945 DEBUG cd frappe-bench/apps/frappe && yarn install
+2021-10-28 13:54:39,783 WARNING cd frappe-bench/apps/frappe && yarn install executed with exit code 1
+2021-10-28 13:54:39,785 DEBUG cd frappe-bench/apps/frappe && yarn install
+2021-10-28 13:54:48,296 WARNING cd frappe-bench/apps/frappe && yarn install executed with exit code 1
+2021-10-28 13:54:48,311 DEBUG cd frappe-bench && bench build
+2021-10-28 13:54:48,483 INFO /usr/local/bin/bench build
+2021-10-28 13:54:52,512 LOG setting up backups
+2021-10-28 13:54:52,517 INFO Bench frappe-bench initialized
+2021-10-28 13:54:52,985 INFO /usr/local/bin/bench start
+2021-10-28 13:54:53,732 INFO /usr/local/bin/bench worker --queue short
+2021-10-28 13:54:53,738 INFO /usr/local/bin/bench serve --port 8000
+2021-10-28 13:54:53,739 INFO /usr/local/bin/bench schedule
+2021-10-28 13:54:53,739 INFO /usr/local/bin/bench watch
+2021-10-28 13:54:53,763 INFO /usr/local/bin/bench worker --queue long
+2021-10-28 13:54:53,765 INFO /usr/local/bin/bench worker --queue default
+2021-10-28 13:55:20,421 INFO /usr/local/bin/bench new-site dcode.com
+2021-10-28 13:56:34,490 INFO /usr/local/bin/bench new-site dcode.com
+2021-10-28 13:57:36,278 INFO /usr/local/bin/bench get-app erpnext --branch version-13
+2021-10-28 13:57:36,939 LOG Getting app erpnext
+2021-10-28 13:57:36,939 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-13 --depth 1 --origin upstream
+2021-10-28 13:57:44,897 LOG installing erpnext
+2021-10-28 13:57:44,897 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/erpnext 
+2021-10-28 13:58:01,388 DEBUG cd ./apps/erpnext && yarn install
+2021-10-28 13:58:02,489 DEBUG bench build --app erpnext
+2021-10-28 13:58:02,680 INFO /usr/local/bin/bench build --app erpnext
+2021-10-28 13:58:43,513 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2021-10-28 14:00:17,875 INFO /usr/local/bin/bench start
+2021-10-28 14:00:18,570 INFO /usr/local/bin/bench serve --port 8000
+2021-10-28 14:00:18,627 INFO /usr/local/bin/bench worker --queue short
+2021-10-28 14:00:18,657 INFO /usr/local/bin/bench schedule
+2021-10-28 14:00:18,657 INFO /usr/local/bin/bench worker --queue long
+2021-10-28 14:00:18,658 INFO /usr/local/bin/bench watch
+2021-10-28 14:00:18,664 INFO /usr/local/bin/bench worker --queue default
+2021-10-30 12:00:01,788 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-30 15:30:59,796 INFO /usr/local/bin/bench start
+2021-10-30 15:31:00,676 INFO /usr/local/bin/bench serve --port 8000
+2021-10-30 15:31:00,696 INFO /usr/local/bin/bench schedule
+2021-10-30 15:31:00,709 INFO /usr/local/bin/bench watch
+2021-10-30 15:31:00,716 INFO /usr/local/bin/bench worker --queue long
+2021-10-30 15:31:00,718 INFO /usr/local/bin/bench worker --queue short
+2021-10-30 15:31:00,774 INFO /usr/local/bin/bench worker --queue default
+2021-10-30 15:32:01,476 INFO /usr/local/bin/bench start
+2021-10-30 15:32:30,683 INFO /usr/local/bin/bench start
+2021-10-30 15:35:46,859 INFO /usr/local/bin/bench start
+2021-10-30 15:35:47,940 INFO /usr/local/bin/bench serve --port 8000
+2021-10-30 15:35:47,947 INFO /usr/local/bin/bench watch
+2021-10-30 15:35:47,950 INFO /usr/local/bin/bench schedule
+2021-10-30 15:35:47,952 INFO /usr/local/bin/bench worker --queue long
+2021-10-30 15:35:47,972 INFO /usr/local/bin/bench worker --queue short
+2021-10-30 15:35:47,977 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 12:10:36,634 INFO /usr/local/bin/bench start
+2021-10-31 12:10:37,539 INFO /usr/local/bin/bench watch
+2021-10-31 12:10:37,557 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 12:10:37,588 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 12:10:37,600 INFO /usr/local/bin/bench schedule
+2021-10-31 12:10:37,607 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 12:10:37,609 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 13:27:50,441 INFO /usr/local/bin/bench new-app Demo-app
+2021-10-31 13:27:50,707 LOG creating new app demo_app
+2021-10-31 13:28:16,539 LOG installing demo_app
+2021-10-31 13:28:16,540 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/demo_app 
+2021-10-31 13:28:18,471 DEBUG bench build --app demo_app
+2021-10-31 13:28:18,670 INFO /usr/local/bin/bench build --app demo_app
+2021-10-31 13:28:59,893 INFO /usr/local/bin/bench start
+2021-10-31 13:29:00,750 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 13:29:00,752 INFO /usr/local/bin/bench schedule
+2021-10-31 13:29:00,756 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 13:29:00,770 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 13:29:00,772 INFO /usr/local/bin/bench watch
+2021-10-31 13:29:00,783 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 13:30:16,899 INFO /usr/local/bin/bench remove-app Demo-app
+2021-10-31 13:30:17,161 WARNING /usr/local/bin/bench remove-app Demo-app executed with exit code 1
+2021-10-31 13:30:41,425 INFO /usr/local/bin/bench remove-app demo_app
+2021-10-31 13:30:41,888 INFO /usr/local/bin/bench --site all list-apps --format json
+2021-10-31 13:30:42,578 INFO /usr/local/bin/bench --site dcode.com list-apps
+2021-10-31 13:30:42,894 DEBUG ./env/bin/python -m pip uninstall -y demo_app
+2021-10-31 13:31:33,864 INFO /usr/local/bin/bench new-app Demo-app
+2021-10-31 13:31:34,130 LOG creating new app demo_app
+2021-10-31 13:31:53,205 LOG installing demo_app
+2021-10-31 13:31:53,206 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/demo_app 
+2021-10-31 13:31:55,065 DEBUG bench build --app demo_app
+2021-10-31 13:31:55,264 INFO /usr/local/bin/bench build --app demo_app
+2021-10-31 13:33:55,936 INFO /usr/local/bin/bench start
+2021-10-31 13:33:56,782 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 13:33:56,783 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 13:33:56,792 INFO /usr/local/bin/bench watch
+2021-10-31 13:33:56,804 INFO /usr/local/bin/bench schedule
+2021-10-31 13:33:56,812 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 13:33:56,820 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 13:35:31,347 INFO /usr/local/bin/bench --site all clear-cache
+2021-10-31 13:35:35,559 INFO /usr/local/bin/bench start
+2021-10-31 13:35:36,375 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 13:35:36,375 INFO /usr/local/bin/bench watch
+2021-10-31 13:35:36,377 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 13:35:36,385 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 13:35:36,392 INFO /usr/local/bin/bench schedule
+2021-10-31 13:35:36,412 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 13:39:09,587 INFO /usr/local/bin/bench start
+2021-10-31 13:39:10,637 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 13:39:10,657 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 13:39:10,704 INFO /usr/local/bin/bench schedule
+2021-10-31 13:39:10,704 INFO /usr/local/bin/bench watch
+2021-10-31 13:39:10,718 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 13:39:10,724 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 13:41:15,551 INFO /usr/local/bin/bench install-app demo_app
+2021-10-31 13:41:22,325 INFO /usr/local/bin/bench start
+2021-10-31 13:41:23,124 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 13:41:23,126 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 13:41:23,128 INFO /usr/local/bin/bench watch
+2021-10-31 13:41:23,137 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 13:41:23,138 INFO /usr/local/bin/bench schedule
+2021-10-31 13:41:23,177 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 15:46:30,128 INFO /usr/local/bin/bench start
+2021-10-31 15:46:31,070 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 15:46:31,093 INFO /usr/local/bin/bench watch
+2021-10-31 15:46:31,103 INFO /usr/local/bin/bench worker --queue short
+2021-10-31 15:46:31,113 INFO /usr/local/bin/bench serve --port 8000
+2021-10-31 15:46:31,118 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 15:46:31,141 INFO /usr/local/bin/bench schedule
